@@ -8,8 +8,8 @@ func sortMapValues(input map[int]string) (result []string) {
 		keys = append(keys, v)
 	}
 	sort.Ints(keys)
-	for i, k := range keys {
-		result[i] += input[k]
+	for _, k := range keys {
+		result = append(result, input[k])
 	}
 
 	return
