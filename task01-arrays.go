@@ -5,5 +5,5 @@ func average(input [15]float32) (result float32) {
 		result += v
 	}
 
-	return result / 2
+	return result / float32(len(input))
 }
